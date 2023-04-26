@@ -1,0 +1,194 @@
+39)
+class Solution {
+    public int divide(int dividend, int divisor) {
+        int res=dividend/divisor;
+        res=Math.round(res);
+        return res;        
+    }
+}
+44)
+class Solution {
+    public int searchInsert(int[] nums, int target) {
+        int low=0;
+        int high=nums.length-1;
+        while(low<=high)
+        {
+            int mid=(low-(low-high)/2);
+            if(nums[mid]==target)
+            {
+                return mid;
+            }
+            else if(nums[mid]<target)
+            {
+                low=mid+1;
+            }
+            else 
+            {
+                high=mid-1;
+            }
+        }
+        return low;
+    }
+}
+45)
+class Solution {
+    public int searchInsert(int[] nums, int target) {
+        int low=0;
+        int high=nums.length-1;
+        while(low<=high)
+        {
+            int mid=(low-(low-high)/2);
+            if(nums[mid]==target)
+            {
+                return mid;
+            }
+            else if(nums[mid]<target)
+            {
+                low=mid+1;
+            }
+            else 
+            {
+                high=mid-1;
+            }
+        }
+        return low;
+    }
+}
+53)
+import java.math.BigInteger;
+class Solution {
+    public String multiply(String num1, String num2) {
+        BigInteger a=new BigInteger(num1);
+        BigInteger b=new BigInteger(num2);
+        BigInteger c=a.multiply(b);
+        return c+"";  
+    }
+}
+60)
+class Solution {
+    public double myPow(double x, int n) {
+        x=Math.pow(x,n);
+        return x;
+    }
+}
+70)
+class Solution {
+    public String getPermutation(int n, int k) {
+        
+        List<Integer> lr = new ArrayList<>();
+        int sum=1;
+        for(int i=1;i<=n;i++) {lr.add(i);sum*=i;}
+        StringBuilder sb = new StringBuilder();
+        while(lr.size()!=0&&n>0)
+        {
+            //succesively decreasing the factorials value
+            sum/=n--;
+            //a considered case when a new row of element is going to start fr.eg if n=4 and k=12 then it is sitting at the max of getting '2' at first place i.e. 2431 after 3s line will take place
+            if(k%sum==0){sb.append(lr.remove(k/(sum)-1)); for(int i=lr.size()-1;i>=0;i--) sb.append(lr.get(i)); return sb.toString();}
+           // removing the element based on how the get considered by k
+            sb.append(lr.remove(k/(sum)));
+
+            k=k%sum;
+        }
+        return sb.toString();
+    }
+}
+     
+71)
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode rotateRight(ListNode head, int k) {
+        
+        ListNode start = head, end = head, curr = head;
+        int count = 0;
+        if(head == null || head.next == null)
+            return head;
+        while(curr != null){
+            curr = curr.next;
+            count++;
+        }
+        while(end.next != null){
+            end = end.next;
+        }
+        end.next = head; //ending point
+        int i = 0;
+        k %= count;
+        while(i < count - k - 1){
+            i++;
+            start = start.next;
+        }
+        ListNode newhead = start.next;
+        start.next = null;
+        return newhead;
+    }
+}
+    
+72)
+class Solution {
+    public int uniquePaths(int m, int n) {
+        
+        int dp[][]=new int[m][n];
+        for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                dp[i][j]=-1;
+            }
+        }
+        return solve(0,0,m,n,dp);
+    }
+    public int solve(int i,int j,int m,int n,int dp[][]){
+        if(i>=m || j>=n) return 0;
+        if(i==m-1 && j==n-1) return 1;
+        if(dp[i][j]!=-1) return dp[i][j];
+        else return dp[i][j]=solve(i+1,j,m,n,dp)+solve(i,j+1,m,n,dp);
+    }
+}
+     
+74)
+class Solution {
+    public int minPathSum(int[][] grid) {
+        
+        int m = grid.length;
+        int n = grid[0].length;
+
+        for(int i=1;i<m; i++){
+            grid[i][0] += grid[i-1][0];
+        }
+        for(int j=1; j<n; j++){
+            grid[0][j] += grid[0][j-1];
+        }
+        for(int i=1; i<m; i++){
+            for(int j=1; j<n; j++){
+                grid[i][j] += Math.min(grid[i-1][j], grid[i][j-1]);
+            }
+        }
+        return grid[m-1][n-1];
+    }
+}
+  
+75)
+class Solution {
+    public boolean isNumber(String s) {
+        
+        try{
+            int l=s.length();
+            if(s.equals("Infinity")||s.equals("-Infinity")||s.equals("+Infinity")||s.charAt(l-1)=='f'||s.charAt(l-1)=='d'||s.charAt(l-1)=='D'||s.charAt(l-1)=='F')
+            return false;
+            double x=Double.parseDouble(s);
+            return true;
+        }
+        catch(Exception e){
+            return false;
+        }
+        
+    }
+}
+   
