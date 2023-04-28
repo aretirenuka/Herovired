@@ -4,7 +4,7 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class Solution {
+public class Arrlist {
 
     public static void main(String[] args) {
     ArrayList<ArrayList<Integer>> listOfArrays = new ArrayList<ArrayList<Integer>>();
