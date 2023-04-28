@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Solution {
+public class Comparison {
 
     public static String getSmallestAndLargest(String s, int k)  { String smallest = ""; String largest = "";
 
