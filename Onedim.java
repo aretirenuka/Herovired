@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Solution {
+public class Onedim {
 
     public static boolean canWin(int leap, int[] game) {
     int n = game.length;
