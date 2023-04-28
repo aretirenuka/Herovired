@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution{
+class Stacking{
 	
 	public static void main(String []argh)
 {
