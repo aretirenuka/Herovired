@@ -20,7 +20,7 @@ class Player{
     }
 }
 
-class Solution {
+class Compare{
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
