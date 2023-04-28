@@ -4,7 +4,7 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class Solution {
+public class Hashsett {
 
  public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
