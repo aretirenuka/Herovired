@@ -1,0 +1,9 @@
+.p{
+	background color: red;
+	font-size: 30px;
+}
+@media screen and(max-width: 500px);
+.p{
+	background color: yellow;
+	font-size: 50px;
+}

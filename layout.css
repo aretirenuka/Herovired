@@ -1,0 +1,82 @@
+.body{
+	background: white;
+	width: 800px;
+	height: 800px;
+}
+.col1{
+	width: 100px;
+	height: 800px;
+}
+.a{
+	background: yellow;
+	width: 100px;
+	height: 200px;
+}
+.b{
+	background: grey;
+	width: 100px;
+	height: 200px;
+}
+.c{
+	background: brown;
+	width: 100px;
+	height: 200px;
+}
+.d{
+	background: green;
+	width: 100px;
+	height: 200px;
+}
+.col2{
+	width: 100px;
+	height: 800px;
+}
+.e{
+	background: yellowgreen;
+	width: 100px;
+	height: 800px;
+}
+.col3{
+	width: 100px;
+	height: 800px;
+}
+.f{
+	background: sandybrown;
+	width: 100px;
+	height: 800px;
+}
+.col4{
+	width: 500px;
+	height: 800px;
+	float: right;
+}
+.row{
+	background: darkblue;
+	width: 500px;
+	height: 180px;
+}
+.g{
+	background: rosybrown;
+	width: 200px;
+	height: 620px;
+}
+.row1{
+	background: blueviolet;
+	width: 300px;
+	height: 180px;
+}
+.h{
+	background: red;
+	width: 150px;
+	height: 440px;
+}
+.col5{
+	background: hotpink;
+	width: 150px;
+	height: 220px;
+}
+.i{
+	background: yellow;
+	width: 150px;
+	height: 220px;
+}

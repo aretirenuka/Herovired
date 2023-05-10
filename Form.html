@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Page</title>
+    <link rel="stylesheet">
+    <style>
+        .logo img{
+    width: 125px;
+    margin: 20px 0;
+}
+nav,.navbar ul{
+    display: flex;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    height: 200%;
+    background-image: linear-gradient(120deg,rgba(103,58,183,05),rgba(103,58,183,0.5)),url("C:\Users\Renuka\Downloads\bgimg.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;  
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    color: #fff;
+    margin-right:45px;
+    cursor: pointer;
+}
+.navbar ul li a{
+    color: #fff;
+    text-decoration: none; 
+}
+button{
+    padding: 12px 20px;
+    outline: none;
+    border: 0;
+    color: #7b91ce;
+    font-weight: bold;
+    background: #fbfbfb;
+    border-radius: 5px;
+    cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+    <div class="container">        
+        <div class="navbar">
+            <div class="logo">
+                <img src="C:\Users\Renuka\Downloads\images.png"alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="file:///C:/CSS/TaskAssign.html">Home</a></li>
+                    <li><a href="file:///C:/CSS/Post.html">PhotoSection</a></li>
+                    <li><a href="file:///C:/CSS/Form.html">Contact us</a></li>
+                </ul>
+                <button type="button">Post</button>
+            </nav>
+        </div>
+        <center>
+            <section id="contact">
+                <h1>Contact Us</h1>
+                <form >
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br><br>
+                    <label for="email">Email:</label>                    
+                    <input type="email" id="email" name="email" required><br><br><br>
+                    <label for="number">Mobile No:</label>
+                    <input class="boxx" type="text" pattern="[0-9]" maxlength="10" minlength="10"><br><br><br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea><br><br><br>
+                    <button type="button" class="btn btn-success mt-3">Submit</button>
+                </form>
+            </section>
+        </center>
+</body>
+</html>
