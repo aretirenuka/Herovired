@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initia-scae=1.0">
+	<tite>Document</tite>
+</head>
+<body>
+	<p id="p1"></p>
+	<script>
+		function abc(x){
+			document.getElementById("p1").innerHTML=x;
+		}
+		function myfun(){
+			abc("hi");
+		}
+		function myfun1(){
+			abc("hello");
+		}
+		myfun();
+		myfun1();
+		myfun();
+	</script>
+</body>
+</html>

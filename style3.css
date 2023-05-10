@@ -1,0 +1,27 @@
+.main{
+	background: red;
+	width: 500px;
+	height: 500px;
+}
+.sub1{
+	background: black;
+	width: 500px;
+	height: 500px;
+}
+.sub1_1{
+	background:skyblue;
+	width:250px;
+	height:250px;
+	float:left;
+}
+.sub2_2{
+	background:orange;
+	width:250px;
+	height:250px;
+	float:right;
+}
+.sub2{
+	background: green;
+	width: 250px;
+	height: 250px;
+}

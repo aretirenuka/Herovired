@@ -1,3 +1,13 @@
-.body{
-	background:white;
+.sam{
+	background: rosybrown;
+	width: 600px;
+	height: 800px;
+	padding: 10px 10px 10px 5px;
+	color: white;
+}
+body{
+	background: pink;
+}
+.sam label{
+	font-size: 30px;
 }

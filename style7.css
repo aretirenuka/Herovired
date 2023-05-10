@@ -1,0 +1,39 @@
+.main{
+	background: green;
+	width: 600px;
+	height: 600px;
+	box-shadow: 10px 10px 10px 10px;
+}
+.a{
+	background: pink;
+	width: 600px;
+	height: 100px;
+}
+.b{
+	background: gold;
+	width: 600px;
+	height: 100px;
+}
+.c{
+	background: brown;
+	width: 600px;
+	height: 400px;
+}
+.c1{
+	background: sandle;
+	width: 200px;
+	height: 400px;
+	float: left;
+}
+.c2{
+	background: yellow;
+	width: 200px;
+	height: 400px;
+	float: left;
+}
+.c3{
+	background: indigo;
+	width: 200px;
+	height: 400px;
+	float: right;
+}

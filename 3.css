@@ -1,0 +1,13 @@
+.sub1{
+	margin:10px;
+	float:right;
+}
+.sub1 li{
+	margin:5px;
+	float:left;
+}
+.sub3 li{
+	background-color:none;
+	background-radius:50%;
+	border-radius:50px;
+}

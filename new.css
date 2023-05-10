@@ -1,0 +1,75 @@
+.main{
+	background: white;
+	width: 500px;
+	height: 400px;
+	border-radius: 20px;
+	box-shadow: 10px;
+
+}
+.part{
+	background: white;
+	height: 400px;
+	width: 1200px;
+	box-shadow: 5px 5px 10px 10px;
+	border-radius: 10px;
+	margin-left: 20px;
+}
+.sub11 form{
+	background: lightgreen;
+	width: 500px;
+	height: 200px;
+	box-shadow: 5px 5px 5px 5px;
+	margin-left: 10px ;
+
+}
+.sub12{
+	background: white;
+	width: 80px;
+	height: 60px;
+	float: left;
+}
+.sub12 b img{
+	background: white;
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+.sub12 c table{
+	background: white;
+	width: 90px;
+	height: 70px;
+	float: right;
+	margin-top: 200px;
+	
+}
+.sub2{
+	
+	width: 50px;
+	height: 500px;
+	float: right;
+	margin-left: 200px;
+	margin-top: -300px;
+}
+.sub21{
+	background: lightyellow;
+	width: 500px;
+	height: 200px;
+	float-top: right;
+	margin-top: -80px;
+	margin-left: -500px;
+}
+.sub22{
+	background: lightgreen;
+	width: 140px;
+	height: 100px;
+	float-bottom: right;
+	margin-top: -80px;
+	margin-left: -500px;
+}
+.sub{
+	border-radius: 10px;
+	box-shadow: 10px;
+}
+
+
+
