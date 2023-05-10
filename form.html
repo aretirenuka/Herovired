@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORM VALIDATIONS</title>
+</head>
+<body>
+	<center>
+		<form onsubmit="return submit_formdata()">
+			<label>User Name</label>
+			<input type="text" name="username" id="u_id" onkeypress="clr_err_msg()">
+			<br>
+			<span id="s_id1" style="color:red;"></span>
+			<br>
+			<label>Password</label>
+			<input type="text" name="password" id="p_id" onkeypress="clr_err_msg()">
+			<br>
+			<span id="s_id2" style="color:blue;"></span>
+			<br>
+			<label>Email</label>
+			<input type="email" name="email" id="e_id" onkeypress="clr_err_msg()">
+			<br>
+			<span id="s_id3" style="color:red;"></span>
+			<br>
+			<label>College</label>
+			<input type="text" name="college" id="c_id" onkeypress="clr_err_msg()">
+			<br>
+			<span id="s_id4" style="color:red;"></span>
+			<br> 
+			<label>Branch:</label>
+			<label>CSE</label>
+			<input type="checkbox" name="CSE" value="CSE" >
+			<label>IT</label>
+			<input type="checkbox" name="IT" value="IT" >
+			<label>CIVIL</label>
+			<input type="checkbox" name="CIVIL" value="CIVIL" >
+			<label>MECH</label>
+			<input type="checkbox" name="MECH" value="MECH" >
+			<label>ECE</label>
+			<input type="checkbox" name="ECE" value="ECE" >
+			<br>
+			<br>
+			<label>Phone Num</label>
+			<input type="" name="number" id="ph_id" onkeypress="clr_err_msg()">
+			<br>
+			<label>
+			<span id="s_id5" style="color:red;"></span>
+			<br>
+			<input type="submit" name="" value="submit" onkeypress="clr_err_msg()">
+		</form>
+	</center>
+	<script type="text/javascript">
+		function submit_formdata(){
+			let username=document.getElementById('u_id').value;
+			let password=document.getElementById('p_id').value;
+			let email=document.getElementById('e_id').value;
+			let email=document.getElementById('c_id').value;
+			let email=document.getElementById('ph_id').value;
+
+
+            if(username == ''){
+				//alert("please enter username");
+				document.getElementById('s_id1').innerText=alert("Please enter user name");
+                //return false;
+			}
+			if(password == ''){
+				//alert("please enter username");
+				document.getElementById('s_id1').innerText=alert("Please enter password");
+                //return false;
+			}
+			
+			if(email == ''){
+				//alert("please enter email");
+				document.getElementById('s_id1').innerText=alert("Please enter email");
+                //return false;
+			}
+			if(college == ''){
+				//alert("please enter username");
+				document.getElementById('s_id1').innerText=alert("Please enter college name");
+                //return false;
+			}
+			if(Phone Num == ''){
+				//alert("please enter username");
+				document.getElementById('s_id1').innerText=alert("Please enter Phone Num");
+                //return false;
+			}
+						
+
+
+		}
+		function clr_err_msg(){
+			document.getElementById('s_id1').innerText='';
+			document.getElementById('s_id2').innerText='';
+			document.getElementById('s_id3').innerText='';
+			document.getElementById('s_id4').innerText='';
+			document.getElementById('s_id5').innerText='';
+			
+		}
+		
+	</script>
+</body>
+</html>
+
+	

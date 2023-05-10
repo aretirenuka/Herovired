@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>event handling</title>
+</head>
+<body>
+    <button onclick="fun()">hit here</button>
+  <p id="demo"></p>
+  <script type="text/javascript">
+    let count=0;
+    function fun(){
+        let demo=document.getElementById('demo');
+        count++;
+        let img_src='img"'+count+'.png';
+        demo.innerHTML+='<img src="client-2.png"'+img_src+'"style="width:200px;"><br>';
+    }           
+                
+    
+  </script>
+</body>
+</html>

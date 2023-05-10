@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TASK</title>
+</head>
+<body>
+<script type="text/javascript">
+	var num;
+	var started=false
+	var count=0;
+	var btn=document.getElementById("sb")
+	var btn1=document.getElementById("sb1")
+
+
+	function timer(){
+		if(!started){
+			num=setInterval(mytimer,500);
+			started=true
+			
+		}
+	  }
+		function timer1(){
+		if(started){
+			started=false
+			clearInterval(num);
+			
+		}
+		}
+		function mytimer(){
+			if (started){
+				++count;
+				document.getElementById('p_id').textContent=count;
+			}
+		} 
+	
+</script>
+<p id="p_id"></p>
+<button id="sb" onclick="timer()">Start</button>
+<button id="sb1" onclick="timer1()">Stop</button>
+</body>
+</html>

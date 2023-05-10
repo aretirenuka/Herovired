@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS | Task</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="row" id="row_id">
+		<!-- <div class="col-md-4">
+			<p>1234</p>
+			<p>Antiha</p>
+			<p>ACET</p>
+			<p>CSE</p>
+		</div>
+		<div class="col-md-4">
+			<p>4444</p>
+			<p>Vineetha</p>
+			<p>AEC</p>
+			<p>EEE</p>
+		</div>
+		<div class="col-md-4">
+			<p>5555</p>
+			<p>Ajay</p>
+			<p>ACOE</p>
+			<p>IT</p>
+		</div> -->
+	</div>
+</div>
+<script type="text/javascript">
+	let trainees = [
+		{
+			"id":"1234",
+			"name":"anitha",
+			"college":"ACET",
+			"branch":"CSE"
+		},{
+			"id":"1234",
+			"name":"anitha",
+			"college":"ACET",
+			"branch":"CSE"
+		},{
+			"id":"1234",
+			"name":"anitha",
+			"college":"ACET",
+			"branch":"CSE"
+		}
+	]
+	let i;
+	let row_div = document.getElementById('row_id');
+	for(i=0;i<=trainees.length-1;i++){
+		let div= document.createElement('div');
+		div.classList.add("col-md-4");
+		let p1= document.createElement('p');
+		let p2= document.createElement('p');
+		let p3= document.createElement('p');
+		let p4= document.createElement('p');
+		p1.innerText = trainees[i].id;
+		p2.innerText = trainees[i].name;
+		p3.innerText = trainees[i].college;
+		p4.innerText = trainees[i].branch;
+		div.append(p1);
+		div.append(p2);
+		div.append(p3);
+		div.append(p4);
+		console.log(div);
+		row_div.append(div);
+	}
+</script>
+</body>
+
+</html>

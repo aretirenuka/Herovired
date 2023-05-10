@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time Out Functions</title>
+</head>
+<body>
+<script type="text/javascript">
+	//synchronous function
+	document.write("i value is",1)
+	document.write("<br>i value is",2)
+	document.write("<br>i value is",3)
+	document.write("<br>i value is",4)
+	//Asynchronous function
+	let timer=setTimeout(function(){
+		console.log("Enabled after 2 seconds");
+	},2000)
+	console.log(timer);
+	setTimeout(timer);
+	//another way
+	function test(){
+		console.log("Enabled after 2 seconds");
+	}
+	let myInterval=setInterval(test,2000);
+	console.log(timer);
+	//clearTimeout(timer);
+	//clearInterval(myInterval);
+</script>
+</body>
+</html>

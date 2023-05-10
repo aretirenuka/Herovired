@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Validations</title>
+</head>
+<body>
+	<center>
+	<form onsubmit="return submit_form()">
+<label>USER NAME</label>
+<input type="text" name="username" id="u_id" onkeypress="clr_err_msg()">
+<br>
+	<span id="sp1" style="color: red;"></span>
+	
+<br>
+<label>EMAIL</label>
+<input type="email" name="email" id="e_id" onkeypress="clr_err_msg()">
+<br>
+<span id="sp2" style="color:blue"></span>
+<br>
+<label>PASSWORD</label>
+<input type="password" name="password" id="p_id" onkeypress="clr_err_msg()">
+<br>
+<span id="sp3" style="color: red;"></span>
+<br>
+<label>COLLEGE</label>
+<input type="text" name="college" id="c_id" onkeypress="clr_err_msg()">
+<br>
+<span id="sp4" style="color: blue;"></span>
+<br>
+<input type="submit" name="" value="submit" >
+
+
+</form></center>
+<script type="text/javascript">
+	function submit_form()
+	{
+		let username=document.getElementById('u_id').value;
+		let email=document.getElementById('e_id').value;
+		let pword=document.getElementById("p1").value;
+		if(username=='')
+		{
+			//alert("please enter username");
+			document.getElementById("sp1").innerText='iam an error';
+			
+		}
+		if(email=='')
+		{
+			document.getElementById("sp2").innerText='Enter email';
+			//alert("please enter email");
+			return false;
+
+		}
+		if(pword=='')
+		{
+			document.getElementById("sp3").innerText="enter password";
+		}
+	}
+	function clr_err_msg()
+	{
+		document.getElementById('sp1').innerText='';
+		document.getElementById('sp2').innerText='';
+		document.getElementById('sp3').innerText='';
+	}
+	
+</script>
+</body>
+</html>
+

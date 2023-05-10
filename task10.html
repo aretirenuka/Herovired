@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>task10</title>
+</head>
+<body>
+	<button id="btn1">Start</button>
+	<button id="btn2">Stop</button>
+	<span id="sp1"></span>
+	<script type="text/javascript">
+		let spn=document.getElementById('sp1');
+		let butt1=document.getElementById('btn1');
+		let butt2=document.getElementById('btn2');
+		let int=null;
+		var i=0;
+		butt1.onclick=mytimer;
+		function mytimer (){
+			int=setInterval(start,500);
+		}
+		function start(){
+			i+=1;
+			spn.innerText=i;
+		}
+		butt2.onclick=stop;
+		function  stop(){
+			clearInterval(int);
+		}
+		
+	</script>
+</body>
+</html>

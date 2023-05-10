@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Methods | findsome()|task</title>
+</head>
+<body>
+	</body>
+	<script type="text/javascript">
+		let trainees=[{
+			"rollno":122,
+			"name":"renuka",
+			"college":"aec"
+		},
+		{
+			"rollno":676,
+			"name":"bhavya",
+			"college":"acet"
+		},
+		{
+			"rollno":876,
+			"name":"priyanka",
+			"college":"acoe"
+		},
+		{
+			"rollno":875,
+			"name":"geetha",
+			"college":"acce"
+		},
+		{
+			"rollno":987,
+			"name":"kavya",
+			"college":"ace"
+		}];
+
+		let name = trainees.find(function(ele,i,arr){
+			return ele.name.startsWith('k');
+		})
+		console.log(name);
+	
+	</script>
+</html>

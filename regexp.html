@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>REGULAR</title>
+</head>
+<body>
+	<input type="text" name="" id="demo">
+	<button onclick="check()">CHECK</button>
+	<span id="s1" style="color: green;"></span>
+	<span id="s2" style="color:red;"></span>
+	<script type="text/javascript">
+		function check()
+		{
+			s=/^[a-zA-Z]/
+			let n=document.getElementById("demo").value;
+			op3=s.test(n);
+			if(op3==true)
+			{
+				document.getElementById("s1").innerText="CORRECT";
+				document.getElementById("s2").innerText="";
+			}
+			else
+			{
+				document.getElementById("s2").innerText="wrong";
+				document.getElementById("s1").innerText="";
+			}
+		}
+	</script>
+
+</body>
+</html>
+

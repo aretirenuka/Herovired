@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Functions</title>
+</head>
+<body>
+<script type="text/javascript">
+	//1.normal Function
+	//2.Anonymous Function
+	//3.IIFE
+	//4.Arrow Function
+	//Normal Function
+	//--------
+	//common Function
+	function mul(num1,num2)
+	{
+		document.write(num1*num2);
+		document.write("<br>");
+	}
+	mul(20,10);
+	//Normal Function
+	function sum(num1,num2)
+	{
+		return num1*num2;
+	}
+	document.write(sum(10,10));
+	document.write("<br>");	
+	//Anonymous function
+	mul=function(num1,num2)
+	{
+		return num1*num2;
+	}
+	document.write(mul(20,30));
+	document.write("<br>");
+	//IIFE
+	//Immediately Invoked Function Expression
+	var sum=(function add(num1,num2){
+		return num1*num2;
+	})(10,20);
+	document.write(sum);
+	document.write("<br>");
+	//Arrow Function
+	//method1
+	
+	add=(num1,num2)=>{
+		return num1+num2;
+	}
+	document.write(add(10,40));
+	document.write("<br>");
+	//method2
+	getRollnumber=(rollno)=>{
+		return rollno;
+	}
+	document.write(getRollnumber(555));
+	document.write("<br>");	
+	//method3
+	login=()=>document.write("Successfully Logged.")
+	login();
+	//method4
+	scanId=_=>document.write("<br>Successfully Scanned.")
+	scanId();
+
+</script>
+</body>
+</html>

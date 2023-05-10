@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM Manipulation Example</title>
+	<script>
+		function changeColorRed(elem) {
+			elem.style.color = "red";
+		}
+		
+		function changeColorBlack(elem) {
+			elem.style.color = "black";
+		}
+		
+		function changeButtonHtml(elem) {
+			elem.innerHTML = "Button was hovered!";
+		}
+		
+		function resetButtonHtml(elem) {
+			elem.innerHTML = "Hover over me!";
+		}
+		
+		function updateParagraph(elem) {
+			var input = document.getElementById("input-textbox");
+			var paragraph = document.getElementById("my-paragraph");
+			paragraph.innerHTML = input.value;
+		}
+		
+		function changeListItemColor(elem) {
+			elem.style.color = "red";
+			elem.style.fontWeight = "bold";
+		}
+		
+		function resetListItemColor(elem) {
+			elem.style.color = "initial";
+			elem.style.fontWeight = "normal";
+		}
+	</script>
+</head>
+<body>
+	<p id="my-paragraph" onmouseover="changeColorRed(this)" onmouseout="changeColorBlack(this)">This is a paragraph.</p>
+	<button id="my-button" onmouseover="changeButtonHtml(this)" onmouseout="resetButtonHtml(this)">Hover over me!</button>
+	<input type="text" id="input-textbox" />
+	<button onclick="updateParagraph()">Update Paragraph</button>
+	<ul>
+		<li onmouseover="changeListItemColor(this)" onmouseout="resetListItemColor(this)">List item 1</li>
+		<li onmouseover="changeListItemColor(this)" onmouseout="resetListItemColor(this)">List item 2</li>
+		<li onmouseover="changeListItemColor(this)" onmouseout="resetListItemColor(this)">List item 3</li>
+	</ul>
+</body>
+</html>

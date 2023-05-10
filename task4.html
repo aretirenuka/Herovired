@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>onchange event</title>
+</head>
+<body>
+	<select onchange="getbranch(this.value)">
+		<option>--select branch</option>
+		<option>CSE</option>
+		<option>IT</option>
+		<option>ECE</option>
+		<option>EEE</option>
+	</select>
+	<div id="div_id"></div>
+	<script type="text/javascript">
+		function getbranch(branch_name){
+			this.value(branch_name);
+		}
+	</script>
+</body>
+</html>
