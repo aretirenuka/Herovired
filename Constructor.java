@@ -1,5 +1,3 @@
-import java.util.*;
-import java.util.Scanner;
 public class Constructor {
 	int l,b,h,area,vol;
 	//default constructor
@@ -38,7 +36,7 @@ public class Constructor {
        b1.cal_Volume();
        System.out.println(b1.cal_Area+" "+b1.cal_Volume);//1 1-->because default constructor
        
-       Box b2=new Box();
+       Box b2=new Box(2);
        b2.cal_Area();
        b2.cal_Volume();
        System.out.println(b2.cal_Area+" "+b2.cal_Volume);
