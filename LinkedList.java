@@ -54,21 +54,11 @@ class LinkedList
 			currNode = currNode.next;
 		}
 	}
-	public static Node recursiveReverse(Node head)
-	{
-	    Node first;
-	    if (head==null || head.next == null)
-	    return head;
-	    first = recursiveReverse(head.next);
-	    head.next.next = head;
-	    head.next = null;
-	    return first;
-	}
+	
 	public static void main(String[] args)
 	{
 		
-		LinkedList list = new LinkedList();
-	
+		LinkedList list = new LinkedList();	
 		list = insert(list, 1);
 		list = insert(list, 2);
 		list = insert(list, 3);
@@ -76,9 +66,8 @@ class LinkedList
 		list = insert(list, 5);
 		list = insert(list, 6);
 		list = insert(list, 7);
-		list = insert(list, 8);
-		
+		list = insert(list, 8);		
 		printList(list);
-		recursiveReverse(head);
+		
 	}
 }
