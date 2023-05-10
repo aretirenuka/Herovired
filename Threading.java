@@ -1,5 +1,6 @@
 import java.util.*;
-import java.util.Scanner;
+import java.io.*;
+import java.lang.Math;
 public class Threading
 {
     public static class Test extends Thread
@@ -11,7 +12,6 @@ public class Threading
     }
     public static void main(String args[])
     {
-        Scanner sc=new Scanner(System.in);
         Test t=new Test();
         t.start();
     }

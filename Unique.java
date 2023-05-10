@@ -17,8 +17,7 @@ class Unique
             }
             if(i==j)
             {
-                System.out.print( arr[j] + " ");
-                
+                System.out.print( arr[j] + " ");                
             }
         }
     }              

@@ -1,37 +1,28 @@
-
 import java.util.*;
 import java.util.Scanner;
 class Palindrome
 {
-public static boolean isPalindrome(int n)
-{
-int d=(int)Math.log10(n);
-int found=0;
-while(n>9)
-{
-if(n/(int)Math.pow(10,d)!=n%10)
-{
-found=1;
-break;
-}
-n=n%(int)Math.pow(10,d);
-n=n/10;
-d=d-2;
-}
-if(found==1)
-return false;
-else
-return true;
-}
-public static void main(String args[])
-{
-Scanner sc=new Scanner(System.in);
-int n=sc.nextInt();
-if(isPalindrome(n))
-System.out.println("true");
-else
-System.out.println("false");
-}
-}
+    public static boolean isPalin(String s)
+    {
+        String rev="";
+        for(int i=s.length()-1;i>=0;i--)
+        {
+            rev=rev+s.charAt(i);           
 
-
+        }
+        if(s.equals(rev))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.next();
+        System.out.print(isPalin(s));
+    }
+}
