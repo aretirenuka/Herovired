@@ -1,19 +1,13 @@
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
 import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
-
-public class Test {
-    public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        String n = bufferedReader.readLine();
-      BigInteger e = new BigInteger(n);
-        boolean probablePrime = e.isProbablePrime(13);
-        String p = probablePrime ? "prime": "not prime";
-        System.out.println(p);
-        bufferedReader.close();
-    }
+try
+{
+Float f1=new Float("3.0");
+int x=f1.intValue();
+byte b=f1.byteValue();
+double d=f1.doubleValue();
+System.out.println(x+b+d);
+}
+catch(NumberFormatException e)
+{
+System.out.println("bad number");
 }

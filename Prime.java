@@ -1,24 +1,22 @@
-import java.util.*;
-import java.util.Scanner;
 class Prime
 {
-    public static void main(String args[])
-    {
-        
-        for(int i=2;i<=500;i++)
-        {
-            int count=0;
-            for(int j=1;j<=i;j++)
-            {
-                if(i%j==0)
-                {
-                    count++;                    
-                }
-            }
-            if(count==2)
-            {
-                System.out.print(i+" ");
-            }
-        }
-    }
+public static void main(String args[])
+{
+int i=Integer.parseInt(args[i]);
+int n1=Integer.parseInt(args[i]);
+int n2=Integer.parseInt(args[i]);
+for(i=0;i<args.length;i++)
+{
+if(i%2==0)
+{
+System.out.println("prime");
+System.out.println(n1);
+System.out.println(n2);
+}
+else
+{
+System.out.println("not prime");
+}
+}
+}
 }
